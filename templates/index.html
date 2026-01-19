@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acharya Prashant AI Chatbot - Discover wisdom through conversation. Experience the teachings of Vedanta with an AI assistant trained on Acharya Prashant's wisdom.">
+    <title>Acharya Prashant — AI Wisdom Guide</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-logo">Acharya Prashant</div>
+        <div class="splash-tagline">"Clarity is the destination"</div>
+        <div class="splash-enter">Click to Awaken</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation" id="navbar">
+        <a href="/" class="nav-logo">Acharya<span>Prashant</span></a>
+        
+        <div class="nav-actions">
+            <a href="/chat" class="nav-btn">Start Conversation</a>
+            <div class="hamburger" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Screen Menu -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <div class="menu-left">
+            <ul class="menu-links">
+                <li><a href="/" data-text="Home">Home</a></li>
+                <li><a href="#wisdom" data-text="Wisdom">Wisdom</a></li>
+                <li><a href="#teachings" data-text="Teachings">Teachings</a></li>
+                <li><a href="/chat" data-text="Chat">Chat Now</a></li>
+                <li><a href="#about" data-text="About">About</a></li>
+            </ul>
+            
+            <div class="social-links" style="margin-top: 3rem;">
+                <a href="https://www.youtube.com/@AcharyaPrashant" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/Aborting_Aham" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/aaborting_aham/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="menu-right">
+            <img src="/static/images/ap-hero.png" alt="Acharya Prashant" class="menu-image" onerror="this.style.display='none'">
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-glow"></div>
+        
+        <div class="hero-content">
+            <p class="hero-subtitle">The Teacher of Vedanta</p>
+            <h1 class="hero-title">
+                <span class="highlight">Awaken</span> to<br>
+                Your True Self
+            </h1>
+            <p class="hero-tagline">
+                "You are not the doer. You are not the thinker. You are the pure witnessing consciousness."
+            </p>
+            <div class="hero-cta">
+                <a href="/chat" class="btn-primary">Begin Conversation</a>
+                <a href="#wisdom" class="btn-secondary">Explore Wisdom</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-container">
+        <div class="marquee">
+            <span class="marquee-item">Vedanta<span class="dot">●</span></span>
+            <span class="marquee-item">Bhagavad Gita<span class="dot">●</span></span>
+            <span class="marquee-item">Liberation<span class="dot">●</span></span>
+            <span class="marquee-item">Consciousness<span class="dot">●</span></span>
+            <span class="marquee-item">Truth<span class="dot">●</span></span>
+            <span class="marquee-item">Clarity<span class="dot">●</span></span>
+            <span class="marquee-item">Vedanta<span class="dot">●</span></span>
+            <span class="marquee-item">Bhagavad Gita<span class="dot">●</span></span>
+            <span class="marquee-item">Liberation<span class="dot">●</span></span>
+            <span class="marquee-item">Consciousness<span class="dot">●</span></span>
+            <span class="marquee-item">Truth<span class="dot">●</span></span>
+            <span class="marquee-item">Clarity<span class="dot">●</span></span>
+        </div>
+    </div>
+
+    <!-- Split Sections (Like On Track / Off Track) -->
+    <section class="split-section" id="wisdom">
+        <div class="split-panel reveal-left">
+            <div class="panel-content">
+                <h2 class="panel-title">
+                    <span class="outline">Seek</span>
+                    <span>Wisdom</span>
+                </h2>
+                <p class="panel-description">
+                    Ancient scriptures decoded for the modern seeker. Discover the timeless truths of the Upanishads, Bhagavad Gita, and more.
+                </p>
+                <a href="/chat" class="btn-primary">Ask Now</a>
+            </div>
+        </div>
+        
+        <div class="split-panel reveal-right" id="teachings">
+            <div class="panel-content">
+                <h2 class="panel-title">
+                    <span class="outline">Find</span>
+                    <span>Clarity</span>
+                </h2>
+                <p class="panel-description">
+                    Cut through the confusion of daily life. Get piercing insights on relationships, career, spirituality, and the nature of self.
+                </p>
+                <a href="/chat" class="btn-primary">Start Chat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section reveal">
+        <blockquote class="quote-large">
+            "The mind that seeks <span class="quote-highlight">liberation</span> is itself the bondage. 
+            Just see this, and you are free."
+        </blockquote>
+        <cite class="quote-author">— Acharya Prashant</cite>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+        <div class="section-header reveal">
+            <p class="section-label">Glimpses</p>
+            <h2 class="section-title">Moments of Wisdom</h2>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item reveal">
+                <img src="/static/images/gallery-1.png" alt="Teaching Session" onerror="this.parentElement.style.background='var(--secondary-bg)'">
+                <div class="gallery-overlay">
+                    <h4 class="gallery-title">Live Sessions</h4>
+                </div>
+            </div>
+            <div class="gallery-item reveal">
+                <img src="/static/images/gallery-2.png" alt="Discourse" onerror="this.parentElement.style.background='var(--secondary-bg)'">
+                <div class="gallery-overlay">
+                    <h4 class="gallery-title">Discourses</h4>
+                </div>
+            </div>
+            <div class="gallery-item reveal">
+                <img src="/static/images/gallery-3.png" alt="Wisdom Talks" onerror="this.parentElement.style.background='var(--secondary-bg)'">
+                <div class="gallery-overlay">
+                    <h4 class="gallery-title">Wisdom Talks</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="about">
+        <h2 class="reveal">Ready to Awaken?</h2>
+        <p class="reveal">
+            Engage with an AI trained on the wisdom of Acharya Prashant. 
+            Ask questions, seek clarity, and discover the truth of who you really are.
+        </p>
+        <a href="/chat" class="btn-dark reveal">Begin Your Journey</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="section-header reveal">
+            <p class="section-label">Features</p>
+            <h2 class="section-title">Why This Chatbot?</h2>
+        </div>
+        
+        <div class="gallery-grid" style="max-width: 1200px; margin: 0 auto;">
+            <div class="gallery-item reveal" style="aspect-ratio: 1; background: var(--secondary-bg); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center;">
+                <i class="fas fa-brain" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 1rem;"></i>
+                <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">RAG-Powered</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Retrieves wisdom from authentic sources before responding</p>
+            </div>
+            <div class="gallery-item reveal" style="aspect-ratio: 1; background: var(--secondary-bg); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center;">
+                <i class="fas fa-history" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 1rem;"></i>
+                <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Chat History</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Your conversations are saved for future reference</p>
+            </div>
+            <div class="gallery-item reveal" style="aspect-ratio: 1; background: var(--secondary-bg); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center;">
+                <i class="fas fa-book-open" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 1rem;"></i>
+                <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Cited Sources</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Every answer comes with references to original teachings</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">Acharya<span>Prashant</span></div>
+                <p class="footer-tagline">"Wake up, the dream is over"</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#wisdom">Wisdom</a></li>
+                    <li><a href="#teachings">Teachings</a></li>
+                    <li><a href="/chat">Chat Now</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="https://acharyaprashant.org" target="_blank">Official Website</a></li>
+                    <li><a href="https://www.youtube.com/@AcharyaPrashant" target="_blank">YouTube Channel</a></li>
+                    <li><a href="https://prashantadvait.com" target="_blank">Foundation</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@AcharyaPrashant" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/Aborting_Aham" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/aaborting_aham/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Acharya Prashant AI Chatbot. For educational purposes.</p>
+            <p>Built with wisdom and code</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

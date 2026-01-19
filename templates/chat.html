@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Chat with Acharya Prashant AI - Get wisdom based answers to your questions about life, spirituality, and self-discovery.">
+    <title>Chat — Acharya Prashant AI</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Marked.js for Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <!-- Sidebar -->
+        <aside class="chat-sidebar" id="chatSidebar">
+            <div class="sidebar-header">
+                <a href="/" class="sidebar-logo">AP<span>AI</span></a>
+                <button class="new-chat-btn" id="newChatBtn">
+                    <i class="fas fa-plus"></i> New Chat
+                </button>
+            </div>
+
+            <div class="chat-history" id="chatHistory">
+                <!-- Chat history items will be loaded here -->
+            </div>
+
+            <div style="padding: 1rem; border-top: 1px solid rgba(212, 175, 55, 0.2);">
+                <a href="/"
+                    style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-main">
+            <header class="chat-header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="chat-title" id="chatTitle">New Conversation</h1>
+            </header>
+
+            <!-- Messages Area -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome Screen (shown when no messages) -->
+                <div class="chat-welcome" id="chatWelcome">
+                    <img src="/static/images/ap-avatar.png" alt="Acharya Prashant" class="welcome-avatar"
+                        onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23D4AF37%22/><text x=%2250%22 y=%2265%22 font-size=%2250%22 text-anchor=%22middle%22 fill=%22%231a1410%22>AP</text></svg>'">
+                    <h2 class="welcome-title">
+                        <span class="highlight">Namaste!</span> Ask me anything.
+                    </h2>
+                    <p class="welcome-subtitle">
+                        I am here to share wisdom from the teachings of Acharya Prashant.
+                        Ask about spirituality, relationships, career, or the nature of self.
+                    </p>
+
+                    <div class="welcome-suggestions">
+                        <button class="suggestion-btn" data-question="What is the meaning of liberation in Vedanta?">
+                            What is liberation?
+                        </button>
+                        <button class="suggestion-btn" data-question="How do I overcome fear and anxiety?">
+                            Overcoming fear
+                        </button>
+                        <button class="suggestion-btn"
+                            data-question="What does the Bhagavad Gita say about action without attachment?">
+                            Action & attachment
+                        </button>
+                        <button class="suggestion-btn" data-question="How can I find my true purpose in life?">
+                            Finding purpose
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input-container">
+                <form class="chat-input-form" id="chatForm">
+                    <input type="text" class="chat-input" id="chatInput"
+                        placeholder="Ask a question about wisdom, life, spirituality..." autocomplete="off">
+                    <button type="submit" class="chat-send-btn" id="sendBtn">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <!-- Overlay for mobile sidebar -->
+    <div id="sidebarOverlay"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 99;">
+    </div>
+
+    <!-- Scripts -->
+    <script src="/static/js/chat.js"></script>
+</body>
+
+</html>

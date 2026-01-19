@@ -1,0 +1,40 @@
+# Dependencies
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Database
+*.db
+chat_history.db
+
+# ChromaDB (too large for git, will recreate on deploy)
+my_chroma_db/
+
+# Chrome driver
+chromedriver.exe
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Large data files
+knowledge_base.jsonl
