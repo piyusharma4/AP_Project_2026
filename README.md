@@ -23,7 +23,7 @@ A beautiful, animated website featuring an AI chatbot powered by RAG (Retrieval 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/AP_Project_2026.git
+git clone https://github.com/piyusharma4/AP_Project_2026.git
 cd AP_Project_2026
 ```
 
