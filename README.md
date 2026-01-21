@@ -1,7 +1,6 @@
 # Acharya Prashant AI Chatbot
 
-A beautiful, animated website featuring an AI chatbot powered by RAG (Retrieval Augmented Generation), inspired by the design aesthetics of landonorris.com.
-
+A beautiful, animated  website AI Chatbot inspired by the wisdom of Acharya Prashant powered by RAG (Retrieval Augmented Generation).
 ![Landing Page](static/images/ap-hero.png)
 
 ## Features
